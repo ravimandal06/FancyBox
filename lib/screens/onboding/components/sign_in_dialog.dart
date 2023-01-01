@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import 'sign_in_form.dart';
@@ -14,7 +15,7 @@ void showCustomDialog(BuildContext context, {required ValueChanged onValue}) {
       return Center(
         child: Container(
           height: 620,
-          margin: const EdgeInsets.symmetric(horizontal: 16),
+          margin:  EdgeInsets.symmetric(horizontal: 16.w),
           padding: const EdgeInsets.symmetric(vertical: 32, horizontal: 24),
           decoration: BoxDecoration(
             color: Colors.white.withOpacity(0.95),

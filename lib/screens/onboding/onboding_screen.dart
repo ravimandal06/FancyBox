@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:rive/rive.dart';
 
 import 'components/animated_btn.dart';
@@ -35,8 +36,8 @@ class _OnbodingScreenState extends State<OnbodingScreen> {
         children: [
           Positioned(
             width: MediaQuery.of(context).size.width * 1.7,
-            left: 100,
-            bottom: 100,
+            left: 100.w,
+            bottom: 100.h,
             child: Image.asset( 
               'assets/Backgrounds/Spline.png',
             ),
@@ -47,9 +48,9 @@ class _OnbodingScreenState extends State<OnbodingScreen> {
               child: const SizedBox(),
             ),
           ),
-          // const RiveAnimation.asset(
-          //   "assets/RiveAssets/shapes.riv",
-          // ),
+          const RiveAnimation.asset(
+            "assets/RiveAssets/shapes.riv",
+          ),
           Positioned.fill(
             child: BackdropFilter(
               filter: ImageFilter.blur(sigmaX: 30, sigmaY: 30),
@@ -63,27 +64,27 @@ class _OnbodingScreenState extends State<OnbodingScreen> {
             duration: const Duration(milliseconds: 260),
             child: SafeArea(
               child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 32),
+                padding:  EdgeInsets.symmetric(horizontal: 32.w),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const Spacer(),
                     SizedBox(
-                      width: 260,
+                      width: 260.w,
                       child: Column(
-                        children: const [
+                        children:  [
                           Text(
-                            "Learn design & code",
+                            "The internet’s source for visuals.",
                             style: TextStyle(
-                              fontSize: 60,
+                              fontSize: 40.sp,
                               fontWeight: FontWeight.w700,
                               fontFamily: "Poppins",
-                              height: 1.2,
+                              height: 1.2.h,
                             ),
                           ),
-                          SizedBox(height: 16),
+                          SizedBox(height: 16.h),
                           Text(
-                            "Don’t skip design. Learn design and code, by building real apps with Flutter and Swift. Complete courses about the best tools.",
+                            "The FancyBox community is a vibrant place for creatives to share royalty-free images, videos and music. Because all content on FancyBox is released under the FancyBox License, it can be used without permission or credit.",
                           ),
                         ],
                       ),
@@ -112,10 +113,10 @@ class _OnbodingScreenState extends State<OnbodingScreen> {
                         );
                       },
                     ),
-                    const Padding(
-                      padding: EdgeInsets.symmetric(vertical: 24),
+                     Padding(
+                      padding: EdgeInsets.symmetric(vertical: 24.w),
                       child: Text(
-                          "Purchase includes access to 30+ courses, 240+ premium tutorials, 120+ hours of videos, source files and certificates."),
+                          "Powered by creators everywhere."),
                     )
                   ],
                 ),
