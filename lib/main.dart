@@ -1,9 +1,13 @@
+import 'package:fancybox/screens/questions/country.dart';
+import 'package:fancybox/screens/questions/gender.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 
 import 'screens/onboding/onboding_screen.dart';
+import 'screens/questions/age.dart';
+import 'screens/questions/categoryPicker.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -20,9 +24,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
+      
       minTextAdapt: true,
       splitScreenMode: true,
       builder: (context, child) => GetMaterialApp(
+        debugShowCheckedModeBanner: false,
         title: 'FancyBox',
         theme: ThemeData(
           scaffoldBackgroundColor: const Color(0xFFEEF1F8),
@@ -38,7 +44,7 @@ class MyApp extends StatelessWidget {
             errorBorder: defaultInputBorder,
           ),
         ),
-        home: const OnbodingScreen(),
+        home:  CategoryPicker(),
       ),
     );
   }

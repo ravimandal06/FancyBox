@@ -29,12 +29,16 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  animated_radio_buttons: ^1.0.0
   cupertino_icons: ^1.0.5
+  fl_country_code_picker: ^0.0.4
   flutter:
     sdk: flutter
   flutter_screenutil: ^5.6.0
   flutter_svg: ^1.1.6
   get: ^4.6.5
+  get_storage: ^2.0.3
+  percent_indicator: ^4.2.2
   rive: ^0.10.0
 
 dev_dependencies:
@@ -60,6 +64,7 @@ flutter:
     - assets/RiveAssets/button.riv
     - assets/RiveAssets/shapes.riv
     - assets/Backgrounds/Spline.png
+    - assets/categories/
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
